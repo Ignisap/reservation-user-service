@@ -24,12 +24,12 @@ public class UserController {
     }
 
     @GetMapping()
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<List<User>> getUsers() {
         return ResponseEntity.ok(userService.getUsers());
     }
 
     @GetMapping("/test")
-    @PreAuthorize("hasRole('ADMIN')")
     public String test(){
         return "its working";
     }

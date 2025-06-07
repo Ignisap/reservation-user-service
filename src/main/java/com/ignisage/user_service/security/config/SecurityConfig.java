@@ -1,4 +1,4 @@
-package com.ignisage.user_service.config;
+package com.ignisage.user_service.security.config;
 
 import com.ignisage.user_service.security.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
