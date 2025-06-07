@@ -1,5 +1,6 @@
 package com.ignisage.user_service.security.controller;
 
+import com.ignisage.user_service.model.Role;
 import com.ignisage.user_service.model.User;
 import com.ignisage.user_service.repository.UserRepository;
 import com.ignisage.user_service.security.JwtService;

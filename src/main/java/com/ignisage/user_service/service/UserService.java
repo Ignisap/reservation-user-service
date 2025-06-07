@@ -5,6 +5,7 @@ import com.ignisage.user_service.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -19,6 +20,10 @@ public class UserService {
     public User registerUser(User user) {
         user.setRegisterDate(LocalDateTime.now());
         return userRepository.save(user);
+    }
+
+    public List<User> getUsers() {
+        return  userRepository.findAll();
     }
 
     public Optional<User> getUser(UUID id) {
