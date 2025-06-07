@@ -3,12 +3,11 @@ package com.ignisage.user_service.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import javax.management.relation.Role;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name="user")
+@Table(name="users")
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
